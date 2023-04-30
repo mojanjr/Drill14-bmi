@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../fonts/vazir/Vazirmatn-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+      font-family: 'Vazirmatn';
+      src: url('../fonts/vazir/Vazirmatn[wght].woff2') format('woff2 supports variations'),
+           url('../fonts/vazir/Vazirmatn[wght].woff2') format('woff2-variations');
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+}
+html {
+    font-size: 14px;
+}
+body {
+    direction: rtl; 
+    margin: 0;
+    background: #7972fa;
+    color: #fff;
+    font-family: Vazirmatn;
+}
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+a { 
+    text-decoration: none;
+}
+ul,
+li {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+.container {
+    width: 100%; 
+    padding: 0 auto;
+}
+.box {
+    width: 40%;
+    height: auto;
+    margin: 60px auto;
+    padding: 30px 0;
+    background: #161141;
+    font-size: 1rem;
+    text-align: center;
+}
+.box .input {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.box h4 {
+    margin-bottom: 10px;
+}
+.box button {
+    margin: 30px 0;
+    color: #161141; 
+}
+.box #assessment1,
+.box #assessment2,
+.box #assessment3,
+.box #assessment4,
+.box #assessment5,
+.box #assessment6 {
+    display: none;
+}

@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>bmi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/bmi.css"/>
+        <link rel="stylesheet" href="assets/css/fontawesome.css" />
+        <link rel="stylesheet" href="assets/css/brands.css" />
+        <link rel="stylesheet" href="assets/css/solid.css" />
+        <link rel="stylesheet" href="assets/css/regular.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="input">
+                    <div class="box-input1">
+                        <h4>وزن(کیلوگرم):</h4>
+                        <input type="number" id="weight"/>
+                    </div>
+                    <div class="box-input2">
+                        <h4>قد(متر):</h4>
+                        <input type="number" id="height"/>
+                    </div>
+                </div>
+                <button onclick="bmi()">ارزیابی وضعیت بدن شما</button>
+                <div class="assessment">
+                    <div id="assessment1">کمبود وزن</div>
+                    <div id="assessment2">وزن ایده آل</div>
+                    <div id="assessment3">اضافه وزن</div>
+                    <div id="assessment4">چاقی نوع1</div>
+                    <div id="assessment5">چاقی نوع 2</div>
+                    <div id="assessment6">چاقی نوع 3</div>
+                </div>
+            </div>
+        </div>
+        <script>
+           function bmi() {
+                var weight = document.getElementById("weight").value;
+                var height = document.getElementById("height").value;
+                var answer;
+                
+                answer = weight / (height**2);
+                if (answer < 18.5) {
+                    document.getElementById("assessment1").style.display = "block";
+                }
+                if (answer >= 18.5 && answer <25) {
+                    document.getElementById("assessment2").style.display = "block";
+                }
+                if (answer >= 25 && answer <30) {
+                    document.getElementById("assessment3").style.display = "block";
+                }
+                if (answer >= 30 && answer <35) {
+                    document.getElementById("assessment4").style.display = "block";
+                }
+                if (answer >= 35 && answer <40) {
+                    document.getElementById("assessment5").style.display = "block";
+                }
+                if (answer >= 40) {
+                    document.getElementById("assessment6").style.display = "block";
+                }
+            } 
+        </script>
+    </body>
+</html>
